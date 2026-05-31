@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A80BB1DE6945F07A9865A57 /* DSPFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21603DB1DF1F5321A7829942 /* DSPFramework.framework */; };
+		2740F4A36AD65401A19D2B71 /* AppDelegate.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 736751A9E4BD5B1385A0A19A /* AppDelegate.swift */; };
+		410B839A55C3525D84184212 /* AppEnvironment.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 072AC07E51735D76920540F2 /* AppEnvironment.swift */; };
+		81838FE8143652669BEC415B /* SceneDelegate.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 21954391BA3C597D9B1E6178 /* SceneDelegate.swift */; };
+		D7872CABBCE75972B436C4DB /* AudioEngineManager.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 94F3716ACA8D5477B8192C54 /* AudioEngineManager.swift */; };
+		66928BCA46755798AFF35CFA /* AudioRecordingManager.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 53B62CE6EFD95E3AB366D180 /* AudioRecordingManager.swift */; };
+		4F5585623C6659118232A288 /* AudioSessionManager.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 825640274EDE535CB7EAED4C /* AudioSessionManager.swift */; };
+		D175A413A4B552AB882675C6 /* BackgroundAudioHandler.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 71FF1D3E0FB55C01809AC5DE /* BackgroundAudioHandler.swift */; };
+		9E3144445E5E50229CD981FA /* LyricsSyncManager.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = D763FEEAC7D45295BDBB2792 /* LyricsSyncManager.swift */; };
+		4CB5BF65A33D5633B63176ED /* MetronomeManager.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 841B08B018705FBE8EDFB648 /* MetronomeManager.swift */; };
+		EE62852C66C355A28C2E1BFC /* VideoRecordingManager.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 6BA2090E741A5F3085BFFF0B /* VideoRecordingManager.swift */; };
+		CD566889B031522495343196 /* DocumentPickerManager.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 41C78939F086541FB6FBDB84 /* DocumentPickerManager.swift */; };
+		B1713F9D38745BF5B24FB66D /* PermissionManager.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = D1AB16F048615A45AEAD1CBE /* PermissionManager.swift */; };
+		28615A088CDC5181BB37E158 /* PhotoLibraryManager.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = C8B56906756F5A1DB74C941E /* PhotoLibraryManager.swift */; };
+		28AD3B57A72559BAA7FEFD7B /* ProjectRepository.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = D7BA704054C35AA991C87430 /* ProjectRepository.swift */; };
+		08C750E1BD575C369CC9F5C4 /* BeatDetector.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 603273E95A8859ACA35F8CA5 /* BeatDetector.swift */; };
+		2C6CB045D679537EB5E4F82F /* ChordDetector.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 71394F622EEC5887B95394BE /* ChordDetector.swift */; };
+		AD408BCC5C3158AFBBCFF898 /* SeparationJob.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 715AB62882C15A129EFE4A9C /* SeparationJob.swift */; };
+		531BA2C60C0F5C5AA8232F08 /* SeparationPipeline.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 6B345274CD2B564383E59710 /* SeparationPipeline.swift */; };
+		E2CDB190B0A355E788BDC004 /* StemSeparator.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 1B7105F6B92D5DA49527F1C5 /* StemSeparator.swift */; };
+		1D2250F9B1955EDAB02E47DE /* ExportManager.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 51B5BBD555545F628B3F861C /* ExportManager.swift */; };
+		5087059166D0593DA4C4980D /* ComprehensiveFeatureTest.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 799C898BF47055C69332F6B5 /* ComprehensiveFeatureTest.swift */; };
+		164B19FAC8145E09AF8EF394 /* UIComponentsTests.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 923C21F040745E429CC15EAE /* UIComponentsTests.swift */; };
+		F932DDC990FD51F4A44F8939 /* ExportViewController.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = A7A57CA3F0E159BABE5F741A /* ExportViewController.swift */; };
+		1D6FDE0CB42B5C13B0E82375 /* FilePickerViewController.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 52528C68FC66571097B3949B /* FilePickerViewController.swift */; };
+		D9CCEE247D6C563F994536F5 /* ImportViewController.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = AF8F0C5A2851547A95D3169C /* ImportViewController.swift */; };
+		2BD50379FAC452FEAAAC1C50 /* LyricsViewController.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 2C773871FCA4596C8E7D52C5 /* LyricsViewController.swift */; };
+		D18027CA01F051D19F135CF1 /* MainTabBarController.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 8A2FFB6D36685875B9D43194 /* MainTabBarController.swift */; };
+		9DA720197F5F5B53A82CD89C /* MixerViewController.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 8911FC6F3F0D5E2EB844422F /* MixerViewController.swift */; };
+		F3F80B66589457F39873D518 /* RecordingViewController.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 2D61C5A5E7B65FCDA19C3D3E /* RecordingViewController.swift */; };
+		5ACC88D0687E5E31AD480E98 /* SeparationProgressViewController.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 87F1223C5A5554649F521DA6 /* SeparationProgressViewController.swift */; };
+		63072D8E79DA5EF98B69D570 /* SettingsViewController.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 3357EEB6D35958B6AC530429 /* SettingsViewController.swift */; };
+		11859A7C7D7B5E87A70D2D21 /* StudioViewController.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = D08178608F4E5B09BC9D3EED /* StudioViewController.swift */; };
+		1DD896452CA057F4AC77975C /* VideoRecordingViewController.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 30CADE0B43535CB2ABC1EEFB /* VideoRecordingViewController.swift */; };
+		8D5D372DCA6F5A588FE40F3B /* BeatMarkerView.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = EDEBB039CA8F5634B50DDA5B /* BeatMarkerView.swift */; };
+		A7B20C543AEA58E4A93A0F7D /* ChordDisplayView.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 3572CC118096598BBE5EEAE2 /* ChordDisplayView.swift */; };
+		17743A1F740D50848178ADE2 /* ProgressRingView.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 7131EAEF6E1755E8B8B2D43D /* ProgressRingView.swift */; };
+		00355D20CAD8530782FB9C35 /* StemSliderView.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 1372D2ACF333509C9B6FB475 /* StemSliderView.swift */; };
+		290EF1A647585616800679EA /* ToastManager.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 007FE1B9B09B5613A947A00D /* ToastManager.swift */; };
+		D98753033E5F550EADD2B3D5 /* TransportControlView.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 00D1F51CB63A5C93800AF67D /* TransportControlView.swift */; };
+		376C138D91045C0A9BCD90B0 /* WaveformView.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = EC2DB7EDDB675539A73BE249 /* WaveformView.swift */; };
+		1A4CB9A64FE7517695B2AD7B /* AudioBuffer.cpp in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 2EF695B8F7735120B45A187B /* AudioBuffer.cpp */; };
+		E869ED8DA1455375BB8AE01B /* AudioResampler.cpp in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 13704D654CC059AF832A8749 /* AudioResampler.cpp */; };
+		6909845138365808B80563EE /* DSPBridge.mm in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 1766C10B40D758BAB3D5365D /* DSPBridge.mm */; };
+		1A0230BFD9245808B403318A /* ISTFTProcessor.cpp in Sources/Resources */ = {isa = PBXBuildFile; fileRef = D8A57A97744A5F0381FE644B /* ISTFTProcessor.cpp */; };
+		46A4344E246054B7B345BDE5 /* Limiter.cpp in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 18F520B09690573298B2843E /* Limiter.cpp */; };
+		43C09DD0B1365109ADDAE7E8 /* STFTProcessor.cpp in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 8A2D10F3DC5D5B2D900B1BD1 /* STFTProcessor.cpp */; };
+		EDCEF996882458ECAF791A3C /* module.modulemap in Headers */ = {isa = PBXBuildFile; fileRef = 24F80F13215D53C682821045 /* module.modulemap */; settings = {ATTRIBUTES = (Public, ); }; };
+		62BFD655153150778E3FABE4 /* AudioBuffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 762FE5CFDDD95A5C80A347F7 /* AudioBuffer.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		E098A02439915404A664DDF1 /* AudioResampler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9E99236B156051B28824C43A /* AudioResampler.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		282B3F78D9D05AEEBE492268 /* DSPBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B6D2DAADD675F71B9928DCC /* DSPBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B78DD3127DA57ABB8326505 /* ISTFTProcessor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 895659C27B0753FCBB370B53 /* ISTFTProcessor.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D2DFB3C482A5EB8B8183076 /* Limiter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CC00219EEDEC505C9D003F66 /* Limiter.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		74A3947CE5B65E0798D1A376 /* STFTProcessor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2DC0437074875CAF978B468D /* STFTProcessor.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3B93CC67AAE57DFB83CABA4 /* ThreadSafeQueue.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1EA23C399D0753688A2F3A3B /* ThreadSafeQueue.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		A91496D76C96508D80B992A4 /* Chordcrnn.mlmodelc in Sources/Resources */ = {isa = PBXBuildFile; fileRef = ABBCC0931A5755F3BC0EE8DA /* Chordcrnn.mlmodelc */; };
+		E47D996C6FF557EEB4BFEAFF /* convtcn20_2048_fp16.mlmodelc in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 0080A9C15E3A56AFA4FCC2B8 /* convtcn20_2048_fp16.mlmodelc */; };
+		8B1FD0827E685C6BB9E2014B /* dunlight_tfc_tdf_b9_l3_w_subv1_cirm_6stems_64_fp16_v2.0.0.mlmodelc in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 980CCA24B7015D81B0BB32F9 /* dunlight_tfc_tdf_b9_l3_w_subv1_cirm_6stems_64_fp16_v2.0.0.mlmodelc */; };
+		D82FE585518B5594B7BF691D /* dun_tfc_tdf_b9_l3_w_6stems_32_fp32_v2.0.1.mlmodelc in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 37CB22BABBDB5D0FA4A8D067 /* dun_tfc_tdf_b9_l3_w_6stems_32_fp32_v2.0.1.mlmodelc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F23D0EAB8DDB5FE381F39E83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6CDD77E595D5A48B6C3DB25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6E71418736154EBAC85D2A1 /* DSPFramework */;
+			remoteInfo = DSPFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28E6649A3FFD5D07ACF7250D /* MusicStemNative.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = "MusicStemNative.app"; path = "MusicStemNative.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21603DB1DF1F5321A7829942 /* DSPFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "DSPFramework.framework"; path = "DSPFramework.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		736751A9E4BD5B1385A0A19A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AppDelegate.swift"; path = "App/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
+		072AC07E51735D76920540F2 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AppEnvironment.swift"; path = "App/AppEnvironment.swift"; sourceTree = SOURCE_ROOT; };
+		21954391BA3C597D9B1E6178 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SceneDelegate.swift"; path = "App/SceneDelegate.swift"; sourceTree = SOURCE_ROOT; };
+		94F3716ACA8D5477B8192C54 /* AudioEngineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AudioEngineManager.swift"; path = "AudioEngine/AudioEngineManager.swift"; sourceTree = SOURCE_ROOT; };
+		53B62CE6EFD95E3AB366D180 /* AudioRecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AudioRecordingManager.swift"; path = "AudioEngine/AudioRecordingManager.swift"; sourceTree = SOURCE_ROOT; };
+		825640274EDE535CB7EAED4C /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AudioSessionManager.swift"; path = "AudioEngine/AudioSessionManager.swift"; sourceTree = SOURCE_ROOT; };
+		71FF1D3E0FB55C01809AC5DE /* BackgroundAudioHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BackgroundAudioHandler.swift"; path = "AudioEngine/BackgroundAudioHandler.swift"; sourceTree = SOURCE_ROOT; };
+		D763FEEAC7D45295BDBB2792 /* LyricsSyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LyricsSyncManager.swift"; path = "AudioEngine/LyricsSyncManager.swift"; sourceTree = SOURCE_ROOT; };
+		841B08B018705FBE8EDFB648 /* MetronomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MetronomeManager.swift"; path = "AudioEngine/MetronomeManager.swift"; sourceTree = SOURCE_ROOT; };
+		6BA2090E741A5F3085BFFF0B /* VideoRecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "VideoRecordingManager.swift"; path = "AudioEngine/VideoRecordingManager.swift"; sourceTree = SOURCE_ROOT; };
+		41C78939F086541FB6FBDB84 /* DocumentPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DocumentPickerManager.swift"; path = "Managers/DocumentPickerManager.swift"; sourceTree = SOURCE_ROOT; };
+		D1AB16F048615A45AEAD1CBE /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PermissionManager.swift"; path = "Managers/PermissionManager.swift"; sourceTree = SOURCE_ROOT; };
+		C8B56906756F5A1DB74C941E /* PhotoLibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PhotoLibraryManager.swift"; path = "Managers/PhotoLibraryManager.swift"; sourceTree = SOURCE_ROOT; };
+		D7BA704054C35AA991C87430 /* ProjectRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ProjectRepository.swift"; path = "Managers/ProjectRepository.swift"; sourceTree = SOURCE_ROOT; };
+		603273E95A8859ACA35F8CA5 /* BeatDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BeatDetector.swift"; path = "ML/BeatDetector.swift"; sourceTree = SOURCE_ROOT; };
+		71394F622EEC5887B95394BE /* ChordDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ChordDetector.swift"; path = "ML/ChordDetector.swift"; sourceTree = SOURCE_ROOT; };
+		715AB62882C15A129EFE4A9C /* SeparationJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SeparationJob.swift"; path = "ML/SeparationJob.swift"; sourceTree = SOURCE_ROOT; };
+		6B345274CD2B564383E59710 /* SeparationPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SeparationPipeline.swift"; path = "ML/SeparationPipeline.swift"; sourceTree = SOURCE_ROOT; };
+		1B7105F6B92D5DA49527F1C5 /* StemSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StemSeparator.swift"; path = "ML/StemSeparator.swift"; sourceTree = SOURCE_ROOT; };
+		51B5BBD555545F628B3F861C /* ExportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ExportManager.swift"; path = "Storage/ExportManager.swift"; sourceTree = SOURCE_ROOT; };
+		799C898BF47055C69332F6B5 /* ComprehensiveFeatureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ComprehensiveFeatureTest.swift"; path = "Tests/ComprehensiveFeatureTest.swift"; sourceTree = SOURCE_ROOT; };
+		923C21F040745E429CC15EAE /* UIComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIComponentsTests.swift"; path = "Tests/UIComponentsTests.swift"; sourceTree = SOURCE_ROOT; };
+		A7A57CA3F0E159BABE5F741A /* ExportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ExportViewController.swift"; path = "UI/ExportViewController.swift"; sourceTree = SOURCE_ROOT; };
+		52528C68FC66571097B3949B /* FilePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "FilePickerViewController.swift"; path = "UI/FilePickerViewController.swift"; sourceTree = SOURCE_ROOT; };
+		AF8F0C5A2851547A95D3169C /* ImportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ImportViewController.swift"; path = "UI/ImportViewController.swift"; sourceTree = SOURCE_ROOT; };
+		2C773871FCA4596C8E7D52C5 /* LyricsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LyricsViewController.swift"; path = "UI/LyricsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		8A2FFB6D36685875B9D43194 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MainTabBarController.swift"; path = "UI/MainTabBarController.swift"; sourceTree = SOURCE_ROOT; };
+		8911FC6F3F0D5E2EB844422F /* MixerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MixerViewController.swift"; path = "UI/MixerViewController.swift"; sourceTree = SOURCE_ROOT; };
+		2D61C5A5E7B65FCDA19C3D3E /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "RecordingViewController.swift"; path = "UI/RecordingViewController.swift"; sourceTree = SOURCE_ROOT; };
+		87F1223C5A5554649F521DA6 /* SeparationProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SeparationProgressViewController.swift"; path = "UI/SeparationProgressViewController.swift"; sourceTree = SOURCE_ROOT; };
+		3357EEB6D35958B6AC530429 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SettingsViewController.swift"; path = "UI/SettingsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		D08178608F4E5B09BC9D3EED /* StudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StudioViewController.swift"; path = "UI/StudioViewController.swift"; sourceTree = SOURCE_ROOT; };
+		30CADE0B43535CB2ABC1EEFB /* VideoRecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "VideoRecordingViewController.swift"; path = "UI/VideoRecordingViewController.swift"; sourceTree = SOURCE_ROOT; };
+		EDEBB039CA8F5634B50DDA5B /* BeatMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BeatMarkerView.swift"; path = "UI/Components/BeatMarkerView.swift"; sourceTree = SOURCE_ROOT; };
+		3572CC118096598BBE5EEAE2 /* ChordDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ChordDisplayView.swift"; path = "UI/Components/ChordDisplayView.swift"; sourceTree = SOURCE_ROOT; };
+		7131EAEF6E1755E8B8B2D43D /* ProgressRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ProgressRingView.swift"; path = "UI/Components/ProgressRingView.swift"; sourceTree = SOURCE_ROOT; };
+		1372D2ACF333509C9B6FB475 /* StemSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StemSliderView.swift"; path = "UI/Components/StemSliderView.swift"; sourceTree = SOURCE_ROOT; };
+		007FE1B9B09B5613A947A00D /* ToastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ToastManager.swift"; path = "UI/Components/ToastManager.swift"; sourceTree = SOURCE_ROOT; };
+		00D1F51CB63A5C93800AF67D /* TransportControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TransportControlView.swift"; path = "UI/Components/TransportControlView.swift"; sourceTree = SOURCE_ROOT; };
+		EC2DB7EDDB675539A73BE249 /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WaveformView.swift"; path = "UI/Components/WaveformView.swift"; sourceTree = SOURCE_ROOT; };
+		2EF695B8F7735120B45A187B /* AudioBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "AudioBuffer.cpp"; path = "DSPFramework/src/AudioBuffer.cpp"; sourceTree = SOURCE_ROOT; };
+		13704D654CC059AF832A8749 /* AudioResampler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "AudioResampler.cpp"; path = "DSPFramework/src/AudioResampler.cpp"; sourceTree = SOURCE_ROOT; };
+		1766C10B40D758BAB3D5365D /* DSPBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = "DSPBridge.mm"; path = "DSPFramework/src/DSPBridge.mm"; sourceTree = SOURCE_ROOT; };
+		D8A57A97744A5F0381FE644B /* ISTFTProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "ISTFTProcessor.cpp"; path = "DSPFramework/src/ISTFTProcessor.cpp"; sourceTree = SOURCE_ROOT; };
+		18F520B09690573298B2843E /* Limiter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Limiter.cpp"; path = "DSPFramework/src/Limiter.cpp"; sourceTree = SOURCE_ROOT; };
+		8A2D10F3DC5D5B2D900B1BD1 /* STFTProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "STFTProcessor.cpp"; path = "DSPFramework/src/STFTProcessor.cpp"; sourceTree = SOURCE_ROOT; };
+		24F80F13215D53C682821045 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.module-map; name = "module.modulemap"; path = "DSPFramework/module.modulemap"; sourceTree = SOURCE_ROOT; };
+		762FE5CFDDD95A5C80A347F7 /* AudioBuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = "AudioBuffer.hpp"; path = "DSPFramework/include/AudioBuffer.hpp"; sourceTree = SOURCE_ROOT; };
+		9E99236B156051B28824C43A /* AudioResampler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = "AudioResampler.hpp"; path = "DSPFramework/include/AudioResampler.hpp"; sourceTree = SOURCE_ROOT; };
+		2B6D2DAADD675F71B9928DCC /* DSPBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DSPBridge.h"; path = "DSPFramework/include/DSPBridge.h"; sourceTree = SOURCE_ROOT; };
+		895659C27B0753FCBB370B53 /* ISTFTProcessor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = "ISTFTProcessor.hpp"; path = "DSPFramework/include/ISTFTProcessor.hpp"; sourceTree = SOURCE_ROOT; };
+		CC00219EEDEC505C9D003F66 /* Limiter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = "Limiter.hpp"; path = "DSPFramework/include/Limiter.hpp"; sourceTree = SOURCE_ROOT; };
+		2DC0437074875CAF978B468D /* STFTProcessor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = "STFTProcessor.hpp"; path = "DSPFramework/include/STFTProcessor.hpp"; sourceTree = SOURCE_ROOT; };
+		1EA23C399D0753688A2F3A3B /* ThreadSafeQueue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = "ThreadSafeQueue.hpp"; path = "DSPFramework/include/ThreadSafeQueue.hpp"; sourceTree = SOURCE_ROOT; };
+		ABBCC0931A5755F3BC0EE8DA /* Chordcrnn.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper.image-bundle; name = "Chordcrnn.mlmodelc"; path = "Models/Chordcrnn.mlmodelc"; sourceTree = SOURCE_ROOT; };
+		0080A9C15E3A56AFA4FCC2B8 /* convtcn20_2048_fp16.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper.image-bundle; name = "convtcn20_2048_fp16.mlmodelc"; path = "Models/convtcn20_2048_fp16.mlmodelc"; sourceTree = SOURCE_ROOT; };
+		980CCA24B7015D81B0BB32F9 /* dunlight_tfc_tdf_b9_l3_w_subv1_cirm_6stems_64_fp16_v2.0.0.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper.image-bundle; name = "dunlight_tfc_tdf_b9_l3_w_subv1_cirm_6stems_64_fp16_v2.0.0.mlmodelc"; path = "Models/dunlight_tfc_tdf_b9_l3_w_subv1_cirm_6stems_64_fp16_v2.0.0.mlmodelc"; sourceTree = SOURCE_ROOT; };
+		37CB22BABBDB5D0FA4A8D067 /* dun_tfc_tdf_b9_l3_w_6stems_32_fp32_v2.0.1.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper.image-bundle; name = "dun_tfc_tdf_b9_l3_w_6stems_32_fp32_v2.0.1.mlmodelc"; path = "Models/dun_tfc_tdf_b9_l3_w_6stems_32_fp32_v2.0.1.mlmodelc"; sourceTree = SOURCE_ROOT; };
+		EAE1558ED3A65483935F6A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "Info.plist"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		142510A1C9085C4883E20E63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A80BB1DE6945F07A9865A57 /* DSPFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		}};
+		AA4B6E6ABE875C60B3697C18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		}};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E53F0F39060759EFA29CF8DF = {
+			isa = PBXGroup;
+			children = (
+				70A5A7A3FF7552FC8A79FE4B /* MusicStemNative */,
+				742755949F8D59BE98B8A916 /* Products */,
+			);
+			sourceTree = "<group>";
+		}};
+		742755949F8D59BE98B8A916 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28E6649A3FFD5D07ACF7250D /* MusicStemNative.app */,
+				21603DB1DF1F5321A7829942 /* DSPFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		}};
+		70A5A7A3FF7552FC8A79FE4B /* MusicStemNative */ = {
+			isa = PBXGroup;
+			children = (
+				11009A33867D54CFB8AA9F67 /* App */,
+				9AE7EC7806AB5D04AD517082 /* AudioEngine */,
+				6AD3750AE39956099AB0A329 /* DSPFramework */,
+				D907E24CD43158699F9E6B58 /* ML */,
+				BE05F280001557D8B50E01B2 /* Managers */,
+				39AAA2929C6052458BD9E79B /* Models */,
+				972BBA6EC33C5B669E3926DF /* Storage */,
+				2BED9E60559E57A99F33A2BF /* Tests */,
+				8612C22ED8DF5C2AA27200A2 /* UI */,
+				EAE1558ED3A65483935F6A9F /* Info.plist */,
+			);
+			name = MusicStemNative;
+			sourceTree = "<group>";
+		}};
+		11009A33867D54CFB8AA9F67 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				736751A9E4BD5B1385A0A19A /* AppDelegate.swift */,
+				072AC07E51735D76920540F2 /* AppEnvironment.swift */,
+				21954391BA3C597D9B1E6178 /* SceneDelegate.swift */,
+			);
+			name = "App";
+			sourceTree = "<group>";
+		}};
+		9AE7EC7806AB5D04AD517082 /* AudioEngine */ = {
+			isa = PBXGroup;
+			children = (
+				94F3716ACA8D5477B8192C54 /* AudioEngineManager.swift */,
+				53B62CE6EFD95E3AB366D180 /* AudioRecordingManager.swift */,
+				825640274EDE535CB7EAED4C /* AudioSessionManager.swift */,
+				71FF1D3E0FB55C01809AC5DE /* BackgroundAudioHandler.swift */,
+				D763FEEAC7D45295BDBB2792 /* LyricsSyncManager.swift */,
+				841B08B018705FBE8EDFB648 /* MetronomeManager.swift */,
+				6BA2090E741A5F3085BFFF0B /* VideoRecordingManager.swift */,
+			);
+			name = "AudioEngine";
+			sourceTree = "<group>";
+		}};
+		6AD3750AE39956099AB0A329 /* DSPFramework */ = {
+			isa = PBXGroup;
+			children = (
+				ED9F6D39182F548AAE0BFBC9 /* Subgroup */,
+				BBB16DA186905BC7BD6C53F4 /* Subgroup */,
+				24F80F13215D53C682821045 /* module.modulemap */,
+			);
+			name = "DSPFramework";
+			sourceTree = "<group>";
+		}};
+		ED9F6D39182F548AAE0BFBC9 /* DSPFramework/include */ = {
+			isa = PBXGroup;
+			children = (
+				762FE5CFDDD95A5C80A347F7 /* AudioBuffer.hpp */,
+				9E99236B156051B28824C43A /* AudioResampler.hpp */,
+				2B6D2DAADD675F71B9928DCC /* DSPBridge.h */,
+				895659C27B0753FCBB370B53 /* ISTFTProcessor.hpp */,
+				CC00219EEDEC505C9D003F66 /* Limiter.hpp */,
+				2DC0437074875CAF978B468D /* STFTProcessor.hpp */,
+				1EA23C399D0753688A2F3A3B /* ThreadSafeQueue.hpp */,
+			);
+			name = "include";
+			sourceTree = "<group>";
+		}};
+		BBB16DA186905BC7BD6C53F4 /* DSPFramework/src */ = {
+			isa = PBXGroup;
+			children = (
+				2EF695B8F7735120B45A187B /* AudioBuffer.cpp */,
+				13704D654CC059AF832A8749 /* AudioResampler.cpp */,
+				1766C10B40D758BAB3D5365D /* DSPBridge.mm */,
+				D8A57A97744A5F0381FE644B /* ISTFTProcessor.cpp */,
+				18F520B09690573298B2843E /* Limiter.cpp */,
+				8A2D10F3DC5D5B2D900B1BD1 /* STFTProcessor.cpp */,
+			);
+			name = "src";
+			sourceTree = "<group>";
+		}};
+		D907E24CD43158699F9E6B58 /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				603273E95A8859ACA35F8CA5 /* BeatDetector.swift */,
+				71394F622EEC5887B95394BE /* ChordDetector.swift */,
+				715AB62882C15A129EFE4A9C /* SeparationJob.swift */,
+				6B345274CD2B564383E59710 /* SeparationPipeline.swift */,
+				1B7105F6B92D5DA49527F1C5 /* StemSeparator.swift */,
+			);
+			name = "ML";
+			sourceTree = "<group>";
+		}};
+		BE05F280001557D8B50E01B2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				41C78939F086541FB6FBDB84 /* DocumentPickerManager.swift */,
+				D1AB16F048615A45AEAD1CBE /* PermissionManager.swift */,
+				C8B56906756F5A1DB74C941E /* PhotoLibraryManager.swift */,
+				D7BA704054C35AA991C87430 /* ProjectRepository.swift */,
+			);
+			name = "Managers";
+			sourceTree = "<group>";
+		}};
+		39AAA2929C6052458BD9E79B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABBCC0931A5755F3BC0EE8DA /* Chordcrnn.mlmodelc */,
+				0080A9C15E3A56AFA4FCC2B8 /* convtcn20_2048_fp16.mlmodelc */,
+				980CCA24B7015D81B0BB32F9 /* dunlight_tfc_tdf_b9_l3_w_subv1_cirm_6stems_64_fp16_v2.0.0.mlmodelc */,
+				37CB22BABBDB5D0FA4A8D067 /* dun_tfc_tdf_b9_l3_w_6stems_32_fp32_v2.0.1.mlmodelc */,
+			);
+			name = "Models";
+			sourceTree = "<group>";
+		}};
+		972BBA6EC33C5B669E3926DF /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				51B5BBD555545F628B3F861C /* ExportManager.swift */,
+			);
+			name = "Storage";
+			sourceTree = "<group>";
+		}};
+		2BED9E60559E57A99F33A2BF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				799C898BF47055C69332F6B5 /* ComprehensiveFeatureTest.swift */,
+				923C21F040745E429CC15EAE /* UIComponentsTests.swift */,
+			);
+			name = "Tests";
+			sourceTree = "<group>";
+		}};
+		8612C22ED8DF5C2AA27200A2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E831112A26AB599EBC111F1B /* Subgroup */,
+				A7A57CA3F0E159BABE5F741A /* ExportViewController.swift */,
+				52528C68FC66571097B3949B /* FilePickerViewController.swift */,
+				AF8F0C5A2851547A95D3169C /* ImportViewController.swift */,
+				2C773871FCA4596C8E7D52C5 /* LyricsViewController.swift */,
+				8A2FFB6D36685875B9D43194 /* MainTabBarController.swift */,
+				8911FC6F3F0D5E2EB844422F /* MixerViewController.swift */,
+				2D61C5A5E7B65FCDA19C3D3E /* RecordingViewController.swift */,
+				87F1223C5A5554649F521DA6 /* SeparationProgressViewController.swift */,
+				3357EEB6D35958B6AC530429 /* SettingsViewController.swift */,
+				D08178608F4E5B09BC9D3EED /* StudioViewController.swift */,
+				30CADE0B43535CB2ABC1EEFB /* VideoRecordingViewController.swift */,
+			);
+			name = "UI";
+			sourceTree = "<group>";
+		}};
+		E831112A26AB599EBC111F1B /* UI/Components */ = {
+			isa = PBXGroup;
+			children = (
+				EDEBB039CA8F5634B50DDA5B /* BeatMarkerView.swift */,
+				3572CC118096598BBE5EEAE2 /* ChordDisplayView.swift */,
+				7131EAEF6E1755E8B8B2D43D /* ProgressRingView.swift */,
+				1372D2ACF333509C9B6FB475 /* StemSliderView.swift */,
+				007FE1B9B09B5613A947A00D /* ToastManager.swift */,
+				00D1F51CB63A5C93800AF67D /* TransportControlView.swift */,
+				EC2DB7EDDB675539A73BE249 /* WaveformView.swift */,
+			);
+			name = "Components";
+			sourceTree = "<group>";
+		}};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		16BCF623AF9F51E9AF00DE5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDCEF996882458ECAF791A3C /* module.modulemap in Headers */,
+				62BFD655153150778E3FABE4 /* AudioBuffer.hpp in Headers */,
+				E098A02439915404A664DDF1 /* AudioResampler.hpp in Headers */,
+				282B3F78D9D05AEEBE492268 /* DSPBridge.h in Headers */,
+				5B78DD3127DA57ABB8326505 /* ISTFTProcessor.hpp in Headers */,
+				6D2DFB3C482A5EB8B8183076 /* Limiter.hpp in Headers */,
+				74A3947CE5B65E0798D1A376 /* STFTProcessor.hpp in Headers */,
+				F3B93CC67AAE57DFB83CABA4 /* ThreadSafeQueue.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		}};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		082F9293BC5C53D98737E888 /* MusicStemNative */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59CA899851D15B688D0854B1 /* Build configuration list for PBXNativeTarget "MusicStemNative" */;
+			buildPhases = (
+				D983F3A0582252AF9E42510E /* Sources */,
+				142510A1C9085C4883E20E63 /* Frameworks */,
+				1C3B30F551A151BBA4E62876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A91FE81CC10C5DB29C03D516 /* PBXTargetDependency */,
+			);
+			name = MusicStemNative;
+			productName = MusicStemNative;
+			productReference = 28E6649A3FFD5D07ACF7250D /* MusicStemNative.app */;
+			productType = "com.apple.product-type.application";
+		}};
+		D6E71418736154EBAC85D2A1 /* DSPFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF3AF2DC8760593AB311D347 /* Build configuration list for PBXNativeTarget "DSPFramework" */;
+			buildPhases = (
+				E01D2BC078695FCD88E9E840 /* Sources */,
+				16BCF623AF9F51E9AF00DE5E /* Headers */,
+				AA4B6E6ABE875C60B3697C18 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSPFramework;
+			productName = DSPFramework;
+			productReference = 21603DB1DF1F5321A7829942 /* DSPFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		}};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6CDD77E595D5A48B6C3DB25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				TargetAttributes = {
+					082F9293BC5C53D98737E888 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					D6E71418736154EBAC85D2A1 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A71AF654A6BA5C199C94A31A /* Build configuration list for PBXProject "MusicStemNative" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E53F0F39060759EFA29CF8DF;
+			productRefGroup = {products_group_id} /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6E71418736154EBAC85D2A1 /* DSPFramework */,
+				082F9293BC5C53D98737E888 /* MusicStemNative */,
+			);
+		}};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C3B30F551A151BBA4E62876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91496D76C96508D80B992A4 /* Chordcrnn.mlmodelc in Resources */,
+				E47D996C6FF557EEB4BFEAFF /* convtcn20_2048_fp16.mlmodelc in Resources */,
+				8B1FD0827E685C6BB9E2014B /* dunlight_tfc_tdf_b9_l3_w_subv1_cirm_6stems_64_fp16_v2.0.0.mlmodelc in Resources */,
+				D82FE585518B5594B7BF691D /* dun_tfc_tdf_b9_l3_w_6stems_32_fp32_v2.0.1.mlmodelc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		}};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D983F3A0582252AF9E42510E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2740F4A36AD65401A19D2B71 /* AppDelegate.swift in Sources */,
+				410B839A55C3525D84184212 /* AppEnvironment.swift in Sources */,
+				81838FE8143652669BEC415B /* SceneDelegate.swift in Sources */,
+				D7872CABBCE75972B436C4DB /* AudioEngineManager.swift in Sources */,
+				66928BCA46755798AFF35CFA /* AudioRecordingManager.swift in Sources */,
+				4F5585623C6659118232A288 /* AudioSessionManager.swift in Sources */,
+				D175A413A4B552AB882675C6 /* BackgroundAudioHandler.swift in Sources */,
+				9E3144445E5E50229CD981FA /* LyricsSyncManager.swift in Sources */,
+				4CB5BF65A33D5633B63176ED /* MetronomeManager.swift in Sources */,
+				EE62852C66C355A28C2E1BFC /* VideoRecordingManager.swift in Sources */,
+				CD566889B031522495343196 /* DocumentPickerManager.swift in Sources */,
+				B1713F9D38745BF5B24FB66D /* PermissionManager.swift in Sources */,
+				28615A088CDC5181BB37E158 /* PhotoLibraryManager.swift in Sources */,
+				28AD3B57A72559BAA7FEFD7B /* ProjectRepository.swift in Sources */,
+				08C750E1BD575C369CC9F5C4 /* BeatDetector.swift in Sources */,
+				2C6CB045D679537EB5E4F82F /* ChordDetector.swift in Sources */,
+				AD408BCC5C3158AFBBCFF898 /* SeparationJob.swift in Sources */,
+				531BA2C60C0F5C5AA8232F08 /* SeparationPipeline.swift in Sources */,
+				E2CDB190B0A355E788BDC004 /* StemSeparator.swift in Sources */,
+				1D2250F9B1955EDAB02E47DE /* ExportManager.swift in Sources */,
+				5087059166D0593DA4C4980D /* ComprehensiveFeatureTest.swift in Sources */,
+				164B19FAC8145E09AF8EF394 /* UIComponentsTests.swift in Sources */,
+				F932DDC990FD51F4A44F8939 /* ExportViewController.swift in Sources */,
+				1D6FDE0CB42B5C13B0E82375 /* FilePickerViewController.swift in Sources */,
+				D9CCEE247D6C563F994536F5 /* ImportViewController.swift in Sources */,
+				2BD50379FAC452FEAAAC1C50 /* LyricsViewController.swift in Sources */,
+				D18027CA01F051D19F135CF1 /* MainTabBarController.swift in Sources */,
+				9DA720197F5F5B53A82CD89C /* MixerViewController.swift in Sources */,
+				F3F80B66589457F39873D518 /* RecordingViewController.swift in Sources */,
+				5ACC88D0687E5E31AD480E98 /* SeparationProgressViewController.swift in Sources */,
+				63072D8E79DA5EF98B69D570 /* SettingsViewController.swift in Sources */,
+				11859A7C7D7B5E87A70D2D21 /* StudioViewController.swift in Sources */,
+				1DD896452CA057F4AC77975C /* VideoRecordingViewController.swift in Sources */,
+				8D5D372DCA6F5A588FE40F3B /* BeatMarkerView.swift in Sources */,
+				A7B20C543AEA58E4A93A0F7D /* ChordDisplayView.swift in Sources */,
+				17743A1F740D50848178ADE2 /* ProgressRingView.swift in Sources */,
+				00355D20CAD8530782FB9C35 /* StemSliderView.swift in Sources */,
+				290EF1A647585616800679EA /* ToastManager.swift in Sources */,
+				D98753033E5F550EADD2B3D5 /* TransportControlView.swift in Sources */,
+				376C138D91045C0A9BCD90B0 /* WaveformView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		}};
+		E01D2BC078695FCD88E9E840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A4CB9A64FE7517695B2AD7B /* AudioBuffer.cpp in Sources */,
+				E869ED8DA1455375BB8AE01B /* AudioResampler.cpp in Sources */,
+				6909845138365808B80563EE /* DSPBridge.mm in Sources */,
+				1A0230BFD9245808B403318A /* ISTFTProcessor.cpp in Sources */,
+				46A4344E246054B7B345BDE5 /* Limiter.cpp in Sources */,
+				43C09DD0B1365109ADDAE7E8 /* STFTProcessor.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		}};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A91FE81CC10C5DB29C03D516 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6E71418736154EBAC85D2A1 /* DSPFramework */;
+			targetProxy = F23D0EAB8DDB5FE381F39E83 /* PBXContainerItemProxy */;
+		}};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E8DF777A797453FFA2617A10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		}};
+		E5A37B79B0E554BB8220A8AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		}};
+		652DCE98AECC54EFB4E903F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/MusicStemNative/DSPFramework/include",
+				);
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "$(SRCROOT)/MusicStemNative/DSPFramework/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = com.musikx.DSPFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		}};
+		C7F2A7AADC4159C9A1E48B71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/MusicStemNative/DSPFramework/include",
+				);
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "$(SRCROOT)/MusicStemNative/DSPFramework/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = com.musikx.DSPFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		}};
+		7E5998E6C182592BA2696E18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/MusicStemNative/DSPFramework/include",
+				);
+				INFOPLIST_FILE = MusicStemNative/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.musikx.MusicStemNative;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		}};
+		EECAED180B225022A58CA787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/MusicStemNative/DSPFramework/include",
+				);
+				INFOPLIST_FILE = MusicStemNative/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.musikx.MusicStemNative;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		}};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A71AF654A6BA5C199C94A31A /* Build configuration list for PBXProject "MusicStemNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8DF777A797453FFA2617A10 /* Debug */,
+				E5A37B79B0E554BB8220A8AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		}};
+		AF3AF2DC8760593AB311D347 /* Build configuration list for PBXNativeTarget "DSPFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652DCE98AECC54EFB4E903F2 /* Debug */,
+				C7F2A7AADC4159C9A1E48B71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		}};
+		59CA899851D15B688D0854B1 /* Build configuration list for PBXNativeTarget "MusicStemNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E5998E6C182592BA2696E18 /* Debug */,
+				EECAED180B225022A58CA787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		}};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = D6CDD77E595D5A48B6C3DB25 /* Project object */;
+}

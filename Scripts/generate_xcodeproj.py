@@ -119,6 +119,14 @@ def create_xcodeproj(project_root):
     file_refs = {}
     build_files = {}
     
+    system_frameworks = ["Accelerate", "AVFoundation", "AudioToolbox", "CoreML", "Foundation", "CoreGraphics"]
+    for fw in system_frameworks:
+        fw_name = f"{fw}.framework"
+        file_refs[fw_name] = (generate_id(f"REF_SYSTEM_FW_{fw}"), "wrapper.framework", "SDKROOT", f"System/Library/Frameworks/{fw_name}")
+        
+    dsp_fw_build_files = {f"{fw}.framework": generate_id(f"BF_DSP_{fw}") for fw in system_frameworks}
+    app_fw_build_files = {f"{fw}.framework": generate_id(f"BF_APP_{fw}") for fw in system_frameworks}
+    
     # Register products
     file_refs["MusicStemNative.app"] = (generate_id("REF_PROD_APP"), "wrapper.application", "BUILT_PRODUCTS_DIR", "MusicStemNative.app")
     file_refs["DSPFramework.framework"] = (generate_id("REF_PROD_DSP"), "wrapper.framework", "BUILT_PRODUCTS_DIR", "DSPFramework.framework")
@@ -165,13 +173,24 @@ def create_xcodeproj(project_root):
         f.write("/* Begin PBXBuildFile section */\n")
         # DSP framework dependency in app target
         f.write(f"\t\t{generate_id('BF_DSP_DEP')} /* DSPFramework.framework in Frameworks */ = {{isa = PBXBuildFile; fileRef = {file_refs['DSPFramework.framework'][0]} /* DSPFramework.framework */; }};\n")
+        # System frameworks for DSPFramework
+        for fw_name, bf_id in dsp_fw_build_files.items():
+            f.write(f"\t\t{bf_id} /* {fw_name} in Frameworks */ = {{isa = PBXBuildFile; fileRef = {file_refs[fw_name][0]} /* {fw_name} */; }};\n")
+        # System frameworks for App
+        for fw_name, bf_id in app_fw_build_files.items():
+            f.write(f"\t\t{bf_id} /* {fw_name} in Frameworks */ = {{isa = PBXBuildFile; fileRef = {file_refs[fw_name][0]} /* {fw_name} */; }};\n")
+        # DSPFramework.framework in Embed Frameworks
+        f.write(f"\t\t{generate_id('BF_DSP_EMBED')} /* DSPFramework.framework in Embed Frameworks */ = {{isa = PBXBuildFile; fileRef = {file_refs['DSPFramework.framework'][0]} /* DSPFramework.framework */; settings = {{ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy); }}; }};\n")
         
         for file, (bf_id, ref_id) in build_files.items():
             if file in app_files or file in dsp_files or file in resources:
                 f.write(f"\t\t{bf_id} /* {os.path.basename(file)} in Sources/Resources */ = {{isa = PBXBuildFile; fileRef = {ref_id} /* {os.path.basename(file)} */; }};\n")
             elif file in headers:
-                # Add headers with Public attributes so Swift can import them
-                f.write(f"\t\t{bf_id} /* {os.path.basename(file)} in Headers */ = {{isa = PBXBuildFile; fileRef = {ref_id} /* {os.path.basename(file)} */; settings = {{ATTRIBUTES = (Public, ); }}; }};\n")
+                # Only DSPBridge.h should be a Public header. Others should be Project headers.
+                if os.path.basename(file) == "DSPBridge.h":
+                    f.write(f"\t\t{bf_id} /* {os.path.basename(file)} in Headers */ = {{isa = PBXBuildFile; fileRef = {ref_id} /* {os.path.basename(file)} */; settings = {{ATTRIBUTES = (Public, ); }}; }};\n")
+                else:
+                    f.write(f"\t\t{bf_id} /* {os.path.basename(file)} in Headers */ = {{isa = PBXBuildFile; fileRef = {ref_id} /* {os.path.basename(file)} */; }};\n")
         f.write("/* End PBXBuildFile section */\n\n")
         
         # 2. PBXContainerItemProxy Section
@@ -485,7 +504,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t\tDYLIB_INSTALL_NAME_BASE = \"@rpath\";\n")
         f.write("\t\t\t\tHEADER_SEARCH_PATHS = (\n")
         f.write("\t\t\t\t\t\"$(inherited)\",\n")
-        f.write("\t\t\t\t\t\"$(SRCROOT)/DSPFramework/include\",\n")
+        f.write("\t\t\t\t\t\"$(PROJECT_DIR)/DSPFramework/include\",\n")
         f.write("\t\t\t\t);\n")
         f.write("\t\t\t\tINFOPLIST_FILE = \"\";\n")
         f.write("\t\t\t\tINSTALL_PATH = \"$(LOCAL_LIBRARY_DIR)/Frameworks\";\n")
@@ -497,6 +516,9 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t\tMODULEMAP_FILE = \"$(SRCROOT)/DSPFramework/module.modulemap\";\n")
         f.write("\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = com.musikx.DSPFramework;\n")
         f.write("\t\t\t\tPRODUCT_NAME = \"$(TARGET_NAME)\";\n")
+        f.write("\t\t\t\tPUBLIC_HEADERS_FOLDER_PATH = Headers;\n")
+        f.write("\t\t\t\tCLANG_CXX_LANGUAGE_STANDARD = \"c++17\";\n")
+        f.write("\t\t\t\tCLANG_CXX_LIBRARY = \"libc++\";\n")
         f.write("\t\t\t\tSKIP_INSTALL = YES;\n")
         f.write("\t\t\t\tSWIFT_VERSION = 5.0;\n")
         f.write("\t\t\t};\n")
@@ -513,7 +535,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t\tDYLIB_INSTALL_NAME_BASE = \"@rpath\";\n")
         f.write("\t\t\t\tHEADER_SEARCH_PATHS = (\n")
         f.write("\t\t\t\t\t\"$(inherited)\",\n")
-        f.write("\t\t\t\t\t\"$(SRCROOT)/DSPFramework/include\",\n")
+        f.write("\t\t\t\t\t\"$(PROJECT_DIR)/DSPFramework/include\",\n")
         f.write("\t\t\t\t);\n")
         f.write("\t\t\t\tINFOPLIST_FILE = \"\";\n")
         f.write("\t\t\t\tINSTALL_PATH = \"$(LOCAL_LIBRARY_DIR)/Frameworks\";\n")
@@ -525,6 +547,9 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t\tMODULEMAP_FILE = \"$(SRCROOT)/DSPFramework/module.modulemap\";\n")
         f.write("\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = com.musikx.DSPFramework;\n")
         f.write("\t\t\t\tPRODUCT_NAME = \"$(TARGET_NAME)\";\n")
+        f.write("\t\t\t\tPUBLIC_HEADERS_FOLDER_PATH = Headers;\n")
+        f.write("\t\t\t\tCLANG_CXX_LANGUAGE_STANDARD = \"c++17\";\n")
+        f.write("\t\t\t\tCLANG_CXX_LIBRARY = \"libc++\";\n")
         f.write("\t\t\t\tSKIP_INSTALL = YES;\n")
         f.write("\t\t\t\tSWIFT_VERSION = 5.0;\n")
         f.write("\t\t\t};\n")
@@ -543,7 +568,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t\t);\n")
         f.write("\t\t\t\tHEADER_SEARCH_PATHS = (\n")
         f.write("\t\t\t\t\t\"$(inherited)\",\n")
-        f.write("\t\t\t\t\t\"$(SRCROOT)/DSPFramework/include\",\n")
+        f.write("\t\t\t\t\t\"$(PROJECT_DIR)/DSPFramework/include\",\n")
         f.write("\t\t\t\t);\n")
         f.write("\t\t\t\tINFOPLIST_FILE = Info.plist;\n")
         f.write("\t\t\t\tLD_RUNPATH_SEARCH_PATHS = (\n")
@@ -569,7 +594,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t\t);\n")
         f.write("\t\t\t\tHEADER_SEARCH_PATHS = (\n")
         f.write("\t\t\t\t\t\"$(inherited)\",\n")
-        f.write("\t\t\t\t\t\"$(SRCROOT)/DSPFramework/include\",\n")
+        f.write("\t\t\t\t\t\"$(PROJECT_DIR)/DSPFramework/include\",\n")
         f.write("\t\t\t\t);\n")
         f.write("\t\t\t\tINFOPLIST_FILE = Info.plist;\n")
         f.write("\t\t\t\tLD_RUNPATH_SEARCH_PATHS = (\n")

@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		8A80BB1DE6945F07A9865A57 /* DSPFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21603DB1DF1F5321A7829942 /* DSPFramework.framework */; };
+		D4BFEA081A4F55E4AAC4BB9C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F433ABE2B45F5994B130EB60 /* Accelerate.framework */; };
+		352DFF2FF3B45545A80D81F9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21CAA6EEA1E59989F12A285 /* AVFoundation.framework */; };
+		929AF88275FE562782F181A8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904A09BB929C5844B51696E0 /* AudioToolbox.framework */; };
+		B7DC962D59DA51489E867B3E /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E874D2FE4E054CDB01C576D /* CoreML.framework */; };
+		50EFC354174D5EFA876B557E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEE42F74E9952B7B00D7519 /* Foundation.framework */; };
+		151F39913C725657BAC0C703 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CF617F5D705480B995A29C /* CoreGraphics.framework */; };
+		6069000999B05DE5917DD49B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F433ABE2B45F5994B130EB60 /* Accelerate.framework */; };
+		55664B7EBEA45456BB290D13 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21CAA6EEA1E59989F12A285 /* AVFoundation.framework */; };
+		312B04A7CA3C543E9C7AE665 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904A09BB929C5844B51696E0 /* AudioToolbox.framework */; };
+		30C2D83C1ABF515EB432024C /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E874D2FE4E054CDB01C576D /* CoreML.framework */; };
+		8962EB14FC0D535E8FA62C34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEE42F74E9952B7B00D7519 /* Foundation.framework */; };
+		E607E8F0F19253CB8F149D6F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CF617F5D705480B995A29C /* CoreGraphics.framework */; };
+		E705E9CF8AB45AA0BA925770 /* DSPFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 21603DB1DF1F5321A7829942 /* DSPFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy); }; };
 		2740F4A36AD65401A19D2B71 /* AppDelegate.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 736751A9E4BD5B1385A0A19A /* AppDelegate.swift */; };
 		410B839A55C3525D84184212 /* AppEnvironment.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 072AC07E51735D76920540F2 /* AppEnvironment.swift */; };
 		81838FE8143652669BEC415B /* SceneDelegate.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 21954391BA3C597D9B1E6178 /* SceneDelegate.swift */; };
@@ -54,14 +67,14 @@
 		1A0230BFD9245808B403318A /* ISTFTProcessor.cpp in Sources/Resources */ = {isa = PBXBuildFile; fileRef = D8A57A97744A5F0381FE644B /* ISTFTProcessor.cpp */; };
 		46A4344E246054B7B345BDE5 /* Limiter.cpp in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 18F520B09690573298B2843E /* Limiter.cpp */; };
 		43C09DD0B1365109ADDAE7E8 /* STFTProcessor.cpp in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 8A2D10F3DC5D5B2D900B1BD1 /* STFTProcessor.cpp */; };
-		EDCEF996882458ECAF791A3C /* module.modulemap in Headers */ = {isa = PBXBuildFile; fileRef = 24F80F13215D53C682821045 /* module.modulemap */; settings = {ATTRIBUTES = (Public, ); }; };
-		62BFD655153150778E3FABE4 /* AudioBuffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 762FE5CFDDD95A5C80A347F7 /* AudioBuffer.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		E098A02439915404A664DDF1 /* AudioResampler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9E99236B156051B28824C43A /* AudioResampler.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDCEF996882458ECAF791A3C /* module.modulemap in Headers */ = {isa = PBXBuildFile; fileRef = 24F80F13215D53C682821045 /* module.modulemap */; };
+		62BFD655153150778E3FABE4 /* AudioBuffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 762FE5CFDDD95A5C80A347F7 /* AudioBuffer.hpp */; };
+		E098A02439915404A664DDF1 /* AudioResampler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9E99236B156051B28824C43A /* AudioResampler.hpp */; };
 		282B3F78D9D05AEEBE492268 /* DSPBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B6D2DAADD675F71B9928DCC /* DSPBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B78DD3127DA57ABB8326505 /* ISTFTProcessor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 895659C27B0753FCBB370B53 /* ISTFTProcessor.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D2DFB3C482A5EB8B8183076 /* Limiter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CC00219EEDEC505C9D003F66 /* Limiter.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		74A3947CE5B65E0798D1A376 /* STFTProcessor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2DC0437074875CAF978B468D /* STFTProcessor.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3B93CC67AAE57DFB83CABA4 /* ThreadSafeQueue.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1EA23C399D0753688A2F3A3B /* ThreadSafeQueue.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B78DD3127DA57ABB8326505 /* ISTFTProcessor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 895659C27B0753FCBB370B53 /* ISTFTProcessor.hpp */; };
+		6D2DFB3C482A5EB8B8183076 /* Limiter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CC00219EEDEC505C9D003F66 /* Limiter.hpp */; };
+		74A3947CE5B65E0798D1A376 /* STFTProcessor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2DC0437074875CAF978B468D /* STFTProcessor.hpp */; };
+		F3B93CC67AAE57DFB83CABA4 /* ThreadSafeQueue.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1EA23C399D0753688A2F3A3B /* ThreadSafeQueue.hpp */; };
 		A91496D76C96508D80B992A4 /* Chordcrnn.mlmodelc in Sources/Resources */ = {isa = PBXBuildFile; fileRef = ABBCC0931A5755F3BC0EE8DA /* Chordcrnn.mlmodelc */; };
 		E47D996C6FF557EEB4BFEAFF /* convtcn20_2048_fp16.mlmodelc in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 0080A9C15E3A56AFA4FCC2B8 /* convtcn20_2048_fp16.mlmodelc */; };
 		8B1FD0827E685C6BB9E2014B /* dunlight_tfc_tdf_b9_l3_w_subv1_cirm_6stems_64_fp16_v2.0.0.mlmodelc in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 980CCA24B7015D81B0BB32F9 /* dunlight_tfc_tdf_b9_l3_w_subv1_cirm_6stems_64_fp16_v2.0.0.mlmodelc */; };
@@ -79,6 +92,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F433ABE2B45F5994B130EB60 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Accelerate.framework"; path = "System/Library/Frameworks/Accelerate.framework"; sourceTree = SDKROOT; };
+		D21CAA6EEA1E59989F12A285 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; };
+		904A09BB929C5844B51696E0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; };
+		9E874D2FE4E054CDB01C576D /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreML.framework"; path = "System/Library/Frameworks/CoreML.framework"; sourceTree = SDKROOT; };
+		7EEE42F74E9952B7B00D7519 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		25CF617F5D705480B995A29C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
 		28E6649A3FFD5D07ACF7250D /* MusicStemNative.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = "MusicStemNative.app"; path = "MusicStemNative.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21603DB1DF1F5321A7829942 /* DSPFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "DSPFramework.framework"; path = "DSPFramework.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		736751A9E4BD5B1385A0A19A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AppDelegate.swift"; path = "App/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
@@ -573,7 +592,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/DSPFramework/include",
+					"$(PROJECT_DIR)/DSPFramework/include",
 				);
 				INFOPLIST_FILE = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -585,6 +604,9 @@
 				MODULEMAP_FILE = "$(SRCROOT)/DSPFramework/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.musikx.DSPFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = Headers;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -600,7 +622,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/DSPFramework/include",
+					"$(PROJECT_DIR)/DSPFramework/include",
 				);
 				INFOPLIST_FILE = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -612,6 +634,9 @@
 				MODULEMAP_FILE = "$(SRCROOT)/DSPFramework/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.musikx.DSPFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = Headers;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -628,7 +653,7 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/DSPFramework/include",
+					"$(PROJECT_DIR)/DSPFramework/include",
 				);
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -653,7 +678,7 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/DSPFramework/include",
+					"$(PROJECT_DIR)/DSPFramework/include",
 				);
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

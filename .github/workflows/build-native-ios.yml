@@ -29,6 +29,7 @@ jobs:
 
       - name: Build iOS App No Codesign
         run: |
+          set -o pipefail
           xcodebuild \
             -project MusicStemNative/MusicStemNative.xcodeproj \
             -scheme MusicStemNative \
@@ -38,7 +39,26 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
-            build
+            build 2>&1 | tee xcodebuild.log
+
+      - name: Show Build Errors
+        if: failure()
+        run: |
+          echo "===== LAST 200 LINES ====="
+          tail -n 200 xcodebuild.log
+          echo "===== ERRORS ====="
+          grep -i "error:" xcodebuild.log || true
+          echo "===== UNDEFINED SYMBOLS ====="
+          grep -i "undefined symbol" xcodebuild.log || true
+          echo "===== LINKER ERRORS ====="
+          grep -i "ld:" xcodebuild.log || true
+
+      - name: Upload Build Log
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcodebuild-log
+          path: xcodebuild.log
 
       - name: Find Built App
         run: |

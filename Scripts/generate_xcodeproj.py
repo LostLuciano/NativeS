@@ -222,6 +222,9 @@ def create_xcodeproj(project_root):
         f.write("\t\t\tbuildActionMask = 2147483647;\n")
         f.write("\t\t\tfiles = (\n")
         f.write(f"\t\t\t\t{generate_id('BF_DSP_DEP')} /* DSPFramework.framework in Frameworks */,\n")
+        for fw in system_frameworks:
+            fw_name = f"{fw}.framework"
+            f.write(f"\t\t\t\t{app_fw_build_files[fw_name]} /* {fw_name} in Frameworks */,\n")
         f.write("\t\t\t);\n")
         f.write("\t\t\trunOnlyForDeploymentPostprocessing = 0;\n")
         f.write("\t\t};\n")
@@ -230,6 +233,9 @@ def create_xcodeproj(project_root):
         f.write("\t\t\tisa = PBXFrameworksBuildPhase;\n")
         f.write("\t\t\tbuildActionMask = 2147483647;\n")
         f.write("\t\t\tfiles = (\n")
+        for fw in system_frameworks:
+            fw_name = f"{fw}.framework"
+            f.write(f"\t\t\t\t{dsp_fw_build_files[fw_name]} /* {fw_name} in Frameworks */,\n")
         f.write("\t\t\t);\n")
         f.write("\t\t\trunOnlyForDeploymentPostprocessing = 0;\n")
         f.write("\t\t};\n")
@@ -239,12 +245,26 @@ def create_xcodeproj(project_root):
         f.write("/* Begin PBXGroup section */\n")
         
         # Main Group
+        frameworks_group_id = generate_id("GROUP_FRAMEWORKS")
         f.write(f"\t\t{main_group_id} = {{\n")
         f.write("\t\t\tisa = PBXGroup;\n")
         f.write("\t\t\tchildren = (\n")
         f.write(f"\t\t\t\t{sources_group_id} /* MusicStemNative */,\n")
+        f.write(f"\t\t\t\t{frameworks_group_id} /* Frameworks */,\n")
         f.write(f"\t\t\t\t{products_group_id} /* Products */,\n")
         f.write("\t\t\t);\n")
+        f.write("\t\t\tsourceTree = \"<group>\";\n")
+        f.write("\t\t};\n")
+        
+        # Frameworks Group
+        f.write(f"\t\t{frameworks_group_id} /* Frameworks */ = {{\n")
+        f.write("\t\t\tisa = PBXGroup;\n")
+        f.write("\t\t\tchildren = (\n")
+        for fw in system_frameworks:
+            fw_name = f"{fw}.framework"
+            f.write(f"\t\t\t\t{file_refs[fw_name][0]} /* {fw_name} */,\n")
+        f.write("\t\t\t);\n")
+        f.write("\t\t\tname = Frameworks;\n")
         f.write("\t\t\tsourceTree = \"<group>\";\n")
         f.write("\t\t};\n")
         

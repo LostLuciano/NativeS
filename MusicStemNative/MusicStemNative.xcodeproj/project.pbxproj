@@ -165,6 +165,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A80BB1DE6945F07A9865A57 /* DSPFramework.framework in Frameworks */,
+				6069000999B05DE5917DD49B /* Accelerate.framework in Frameworks */,
+				55664B7EBEA45456BB290D13 /* AVFoundation.framework in Frameworks */,
+				312B04A7CA3C543E9C7AE665 /* AudioToolbox.framework in Frameworks */,
+				30C2D83C1ABF515EB432024C /* CoreML.framework in Frameworks */,
+				8962EB14FC0D535E8FA62C34 /* Foundation.framework in Frameworks */,
+				E607E8F0F19253CB8F149D6F /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +178,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4BFEA081A4F55E4AAC4BB9C /* Accelerate.framework in Frameworks */,
+				352DFF2FF3B45545A80D81F9 /* AVFoundation.framework in Frameworks */,
+				929AF88275FE562782F181A8 /* AudioToolbox.framework in Frameworks */,
+				B7DC962D59DA51489E867B3E /* CoreML.framework in Frameworks */,
+				50EFC354174D5EFA876B557E /* Foundation.framework in Frameworks */,
+				151F39913C725657BAC0C703 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,8 +194,22 @@
 			isa = PBXGroup;
 			children = (
 				70A5A7A3FF7552FC8A79FE4B /* MusicStemNative */,
+				DCD088B2745F54CBB907AE83 /* Frameworks */,
 				742755949F8D59BE98B8A916 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		DCD088B2745F54CBB907AE83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F433ABE2B45F5994B130EB60 /* Accelerate.framework */,
+				D21CAA6EEA1E59989F12A285 /* AVFoundation.framework */,
+				904A09BB929C5844B51696E0 /* AudioToolbox.framework */,
+				9E874D2FE4E054CDB01C576D /* CoreML.framework */,
+				7EEE42F74E9952B7B00D7519 /* Foundation.framework */,
+				25CF617F5D705480B995A29C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		742755949F8D59BE98B8A916 /* Products */ = {

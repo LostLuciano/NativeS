@@ -200,7 +200,7 @@ def create_xcodeproj(project_root):
         f.write(f"\t\t\t\t{generate_id('BF_DSP_DEP')} /* DSPFramework.framework in Frameworks */,\n")
         f.write("\t\t\t);\n")
         f.write("\t\t\trunOnlyForDeploymentPostprocessing = 0;\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         
         f.write(f"\t\t{dsp_frameworks_phase_id} /* Frameworks */ = {{\n")
         f.write("\t\t\tisa = PBXFrameworksBuildPhase;\n")
@@ -208,7 +208,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\tfiles = (\n")
         f.write("\t\t\t);\n")
         f.write("\t\t\trunOnlyForDeploymentPostprocessing = 0;\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         f.write("/* End PBXFrameworksBuildPhase section */\n\n")
         
         # 5. PBXGroup Section
@@ -222,7 +222,7 @@ def create_xcodeproj(project_root):
         f.write(f"\t\t\t\t{products_group_id} /* Products */,\n")
         f.write("\t\t\t);\n")
         f.write("\t\t\tsourceTree = \"<group>\";\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         
         # Products Group
         f.write(f"\t\t{products_group_id} /* Products */ = {{\n")
@@ -233,7 +233,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t);\n")
         f.write("\t\t\tname = Products;\n")
         f.write("\t\t\tsourceTree = \"<group>\";\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         
         # Sources Group (MusicStemNative root group)
         f.write(f"\t\t{sources_group_id} /* MusicStemNative */ = {{\n")
@@ -252,7 +252,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t);\n")
         f.write("\t\t\tname = MusicStemNative;\n")
         f.write("\t\t\tsourceTree = \"<group>\";\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         
         # Subgroups
         subgroups = {
@@ -283,7 +283,7 @@ def create_xcodeproj(project_root):
             f.write("\t\t\t);\n")
             f.write(f"\t\t\tname = \"{os.path.basename(name)}\";\n")
             f.write("\t\t\tsourceTree = \"<group>\";\n")
-            f.write("\t\t}};\n")
+            f.write("\t\t};\n")
             
         f.write("/* End PBXGroup section */\n\n")
         
@@ -297,7 +297,7 @@ def create_xcodeproj(project_root):
             f.write(f"\t\t\t\t{build_files[h][0]} /* {os.path.basename(h)} in Headers */,\n")
         f.write("\t\t\t);\n")
         f.write("\t\t\trunOnlyForDeploymentPostprocessing = 0;\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         f.write("/* End PBXHeadersBuildPhase section */\n\n")
         
         # 7. PBXNativeTarget Section
@@ -320,7 +320,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\tproductName = MusicStemNative;\n")
         f.write(f"\t\t\tproductReference = {file_refs['MusicStemNative.app'][0]} /* MusicStemNative.app */;\n")
         f.write("\t\t\tproductType = \"com.apple.product-type.application\";\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         
         # DSP framework target
         f.write(f"\t\t{dsp_target_id} /* DSPFramework */ = {{\n")
@@ -339,7 +339,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\tproductName = DSPFramework;\n")
         f.write(f"\t\t\tproductReference = {file_refs['DSPFramework.framework'][0]} /* DSPFramework.framework */;\n")
         f.write("\t\t\tproductType = \"com.apple.product-type.framework\";\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         f.write("/* End PBXNativeTarget section */\n\n")
         
         # 8. PBXProject Section
@@ -373,7 +373,7 @@ def create_xcodeproj(project_root):
         f.write(f"\t\t\t\t{dsp_target_id} /* DSPFramework */,\n")
         f.write(f"\t\t\t\t{app_target_id} /* MusicStemNative */,\n")
         f.write("\t\t\t);\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         f.write("/* End PBXProject section */\n\n")
         
         # 9. PBXResourcesBuildPhase Section
@@ -386,7 +386,7 @@ def create_xcodeproj(project_root):
             f.write(f"\t\t\t\t{build_files[r][0]} /* {os.path.basename(r)} in Resources */,\n")
         f.write("\t\t\t);\n")
         f.write("\t\t\trunOnlyForDeploymentPostprocessing = 0;\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         f.write("/* End PBXResourcesBuildPhase section */\n\n")
         
         # 10. PBXSourcesBuildPhase Section
@@ -400,7 +400,7 @@ def create_xcodeproj(project_root):
             f.write(f"\t\t\t\t{build_files[file][0]} /* {os.path.basename(file)} in Sources */,\n")
         f.write("\t\t\t);\n")
         f.write("\t\t\trunOnlyForDeploymentPostprocessing = 0;\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         
         # DSP sources
         f.write(f"\t\t{dsp_sources_phase_id} /* Sources */ = {{\n")
@@ -411,7 +411,7 @@ def create_xcodeproj(project_root):
             f.write(f"\t\t\t\t{build_files[file][0]} /* {os.path.basename(file)} in Sources */,\n")
         f.write("\t\t\t);\n")
         f.write("\t\t\trunOnlyForDeploymentPostprocessing = 0;\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         f.write("/* End PBXSourcesBuildPhase section */\n\n")
         
         # 11. PBXTargetDependency Section
@@ -420,7 +420,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\tisa = PBXTargetDependency;\n")
         f.write(f"\t\t\ttarget = {dsp_target_id} /* DSPFramework */;\n")
         f.write(f"\t\t\ttargetProxy = {container_portal_id} /* PBXContainerItemProxy */;\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         f.write("/* End PBXTargetDependency section */\n\n")
         
         # 12. XCBuildConfiguration Section
@@ -451,7 +451,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t\tSDKROOT = iphoneos;\n")
         f.write("\t\t\t};\n")
         f.write("\t\t\tname = Debug;\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         
         f.write(f"\t\t{proj_release_cfg_id} /* Release */ = {{\n")
         f.write("\t\t\tisa = XCBuildConfiguration;\n")
@@ -472,7 +472,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t\tVALIDATE_PRODUCT = YES;\n")
         f.write("\t\t\t};\n")
         f.write("\t\t\tname = Release;\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         
         # DSP framework configurations
         f.write(f"\t\t{dsp_debug_cfg_id} /* Debug */ = {{\n")
@@ -501,7 +501,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t\tSWIFT_VERSION = 5.0;\n")
         f.write("\t\t\t};\n")
         f.write("\t\t\tname = Debug;\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         
         f.write(f"\t\t{dsp_release_cfg_id} /* Release */ = {{\n")
         f.write("\t\t\tisa = XCBuildConfiguration;\n")
@@ -529,7 +529,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t\tSWIFT_VERSION = 5.0;\n")
         f.write("\t\t\t};\n")
         f.write("\t\t\tname = Release;\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         
         # App configurations
         f.write(f"\t\t{app_debug_cfg_id} /* Debug */ = {{\n")
@@ -556,7 +556,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t\tTARGETED_DEVICE_FAMILY = \"1,2\";\n")
         f.write("\t\t\t};\n")
         f.write("\t\t\tname = Debug;\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         
         f.write(f"\t\t{app_release_cfg_id} /* Release */ = {{\n")
         f.write("\t\t\tisa = XCBuildConfiguration;\n")
@@ -582,7 +582,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t\tTARGETED_DEVICE_FAMILY = \"1,2\";\n")
         f.write("\t\t\t};\n")
         f.write("\t\t\tname = Release;\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         f.write("/* End XCBuildConfiguration section */\n\n")
         
         # 13. XCConfigurationList Section
@@ -595,7 +595,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t);\n")
         f.write("\t\t\tdefaultConfigurationIsVisible = 0;\n")
         f.write("\t\t\tdefaultConfigurationName = Release;\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         
         f.write(f"\t\t{dsp_cfg_list_id} /* Build configuration list for PBXNativeTarget \"DSPFramework\" */ = {{\n")
         f.write("\t\t\tisa = XCConfigurationList;\n")
@@ -605,7 +605,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t);\n")
         f.write("\t\t\tdefaultConfigurationIsVisible = 0;\n")
         f.write("\t\t\tdefaultConfigurationName = Release;\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         
         f.write(f"\t\t{app_cfg_list_id} /* Build configuration list for PBXNativeTarget \"MusicStemNative\" */ = {{\n")
         f.write("\t\t\tisa = XCConfigurationList;\n")
@@ -615,7 +615,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t);\n")
         f.write("\t\t\tdefaultConfigurationIsVisible = 0;\n")
         f.write("\t\t\tdefaultConfigurationName = Release;\n")
-        f.write("\t\t}};\n")
+        f.write("\t\t};\n")
         f.write("/* End XCConfigurationList section */\n\n")
         
         f.write("\t};\n")

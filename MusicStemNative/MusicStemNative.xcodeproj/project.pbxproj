@@ -150,14 +150,14 @@
 				8A80BB1DE6945F07A9865A57 /* DSPFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-		}};
+		};
 		AA4B6E6ABE875C60B3697C18 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-		}};
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -168,7 +168,7 @@
 				742755949F8D59BE98B8A916 /* Products */,
 			);
 			sourceTree = "<group>";
-		}};
+		};
 		742755949F8D59BE98B8A916 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,7 +177,7 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
-		}};
+		};
 		70A5A7A3FF7552FC8A79FE4B /* MusicStemNative */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,7 +194,7 @@
 			);
 			name = MusicStemNative;
 			sourceTree = "<group>";
-		}};
+		};
 		11009A33867D54CFB8AA9F67 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,7 +204,7 @@
 			);
 			name = "App";
 			sourceTree = "<group>";
-		}};
+		};
 		9AE7EC7806AB5D04AD517082 /* AudioEngine */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,7 +218,7 @@
 			);
 			name = "AudioEngine";
 			sourceTree = "<group>";
-		}};
+		};
 		6AD3750AE39956099AB0A329 /* DSPFramework */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,7 +228,7 @@
 			);
 			name = "DSPFramework";
 			sourceTree = "<group>";
-		}};
+		};
 		ED9F6D39182F548AAE0BFBC9 /* DSPFramework/include */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,7 +242,7 @@
 			);
 			name = "include";
 			sourceTree = "<group>";
-		}};
+		};
 		BBB16DA186905BC7BD6C53F4 /* DSPFramework/src */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,7 +255,7 @@
 			);
 			name = "src";
 			sourceTree = "<group>";
-		}};
+		};
 		D907E24CD43158699F9E6B58 /* ML */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,7 +267,7 @@
 			);
 			name = "ML";
 			sourceTree = "<group>";
-		}};
+		};
 		BE05F280001557D8B50E01B2 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,7 +278,7 @@
 			);
 			name = "Managers";
 			sourceTree = "<group>";
-		}};
+		};
 		39AAA2929C6052458BD9E79B /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,7 +289,7 @@
 			);
 			name = "Models";
 			sourceTree = "<group>";
-		}};
+		};
 		972BBA6EC33C5B669E3926DF /* Storage */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,7 +297,7 @@
 			);
 			name = "Storage";
 			sourceTree = "<group>";
-		}};
+		};
 		2BED9E60559E57A99F33A2BF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,7 +306,7 @@
 			);
 			name = "Tests";
 			sourceTree = "<group>";
-		}};
+		};
 		8612C22ED8DF5C2AA27200A2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,7 +325,7 @@
 			);
 			name = "UI";
 			sourceTree = "<group>";
-		}};
+		};
 		E831112A26AB599EBC111F1B /* UI/Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,7 +339,7 @@
 			);
 			name = "Components";
 			sourceTree = "<group>";
-		}};
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -357,7 +357,7 @@
 				F3B93CC67AAE57DFB83CABA4 /* ThreadSafeQueue.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-		}};
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -378,7 +378,7 @@
 			productName = MusicStemNative;
 			productReference = 28E6649A3FFD5D07ACF7250D /* MusicStemNative.app */;
 			productType = "com.apple.product-type.application";
-		}};
+		};
 		D6E71418736154EBAC85D2A1 /* DSPFramework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF3AF2DC8760593AB311D347 /* Build configuration list for PBXNativeTarget "DSPFramework" */;
@@ -395,7 +395,7 @@
 			productName = DSPFramework;
 			productReference = 21603DB1DF1F5321A7829942 /* DSPFramework.framework */;
 			productType = "com.apple.product-type.framework";
-		}};
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -428,7 +428,7 @@
 				D6E71418736154EBAC85D2A1 /* DSPFramework */,
 				082F9293BC5C53D98737E888 /* MusicStemNative */,
 			);
-		}};
+		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -442,7 +442,7 @@
 				D82FE585518B5594B7BF691D /* dun_tfc_tdf_b9_l3_w_6stems_32_fp32_v2.0.1.mlmodelc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-		}};
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -492,7 +492,7 @@
 				376C138D91045C0A9BCD90B0 /* WaveformView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-		}};
+		};
 		E01D2BC078695FCD88E9E840 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -505,7 +505,7 @@
 				43C09DD0B1365109ADDAE7E8 /* STFTProcessor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-		}};
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -513,7 +513,7 @@
 			isa = PBXTargetDependency;
 			target = D6E71418736154EBAC85D2A1 /* DSPFramework */;
 			targetProxy = F23D0EAB8DDB5FE381F39E83 /* PBXContainerItemProxy */;
-		}};
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -542,7 +542,7 @@
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
-		}};
+		};
 		E5A37B79B0E554BB8220A8AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -562,7 +562,7 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		}};
+		};
 		652DCE98AECC54EFB4E903F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -589,7 +589,7 @@
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
-		}};
+		};
 		C7F2A7AADC4159C9A1E48B71 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -616,7 +616,7 @@
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
-		}};
+		};
 		7E5998E6C182592BA2696E18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -641,7 +641,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		}};
+		};
 		EECAED180B225022A58CA787 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -666,7 +666,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
-		}};
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -678,7 +678,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		}};
+		};
 		AF3AF2DC8760593AB311D347 /* Build configuration list for PBXNativeTarget "DSPFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -687,7 +687,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		}};
+		};
 		59CA899851D15B688D0854B1 /* Build configuration list for PBXNativeTarget "MusicStemNative" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -696,7 +696,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		}};
+		};
 /* End XCConfigurationList section */
 
 	};

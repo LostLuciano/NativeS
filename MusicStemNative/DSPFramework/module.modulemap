@@ -1,0 +1,11 @@
+module DSPFramework {
+    header "include/DSPBridge.h"
+    header "include/AudioBuffer.hpp"
+    header "include/STFTProcessor.hpp"
+    header "include/ISTFTProcessor.hpp"
+    header "include/AudioResampler.hpp"
+    header "include/Limiter.hpp"
+    header "include/ThreadSafeQueue.hpp"
+    
+    export *
+}

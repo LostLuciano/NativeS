@@ -1,0 +1,10 @@
+[
+  {
+    "name": "blatantsPatch.dylib",
+    "path": "Frameworks\\blatantsPatch.dylib",
+    "size": 70848,
+    "type": "Binary/Dylib",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Analyze for reimplementation"
+  }
+]

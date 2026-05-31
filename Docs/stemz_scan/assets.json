@@ -1,0 +1,50 @@
+[
+  {
+    "name": "AppIcon60x60@2x.png",
+    "path": "AppIcon60x60@2x.png",
+    "size": 6229,
+    "type": "Image/Asset",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Create original replacement"
+  },
+  {
+    "name": "AppIcon76x76@2x~ipad.png",
+    "path": "AppIcon76x76@2x~ipad.png",
+    "size": 7230,
+    "type": "Image/Asset",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Create original replacement"
+  },
+  {
+    "name": "Assets.car",
+    "path": "Assets.car",
+    "size": 18546584,
+    "type": "Image/Asset",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Create original replacement"
+  },
+  {
+    "name": "google.png",
+    "path": "GoogleSignIn_GoogleSignIn.bundle\\google.png",
+    "size": 572,
+    "type": "Image/Asset",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Create original replacement"
+  },
+  {
+    "name": "google@2x.png",
+    "path": "GoogleSignIn_GoogleSignIn.bundle\\google@2x.png",
+    "size": 987,
+    "type": "Image/Asset",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Create original replacement"
+  },
+  {
+    "name": "google@3x.png",
+    "path": "GoogleSignIn_GoogleSignIn.bundle\\google@3x.png",
+    "size": 1622,
+    "type": "Image/Asset",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Create original replacement"
+  }
+]

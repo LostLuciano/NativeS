@@ -1,0 +1,226 @@
+[
+  {
+    "name": "classical.caf",
+    "path": "classical.caf",
+    "size": 4044805,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "click-downbeat.m4a",
+    "path": "click-downbeat.m4a",
+    "size": 82360,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "click-subbeat.m4a",
+    "path": "click-subbeat.m4a",
+    "size": 82360,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "click-upbeat.m4a",
+    "path": "click-upbeat.m4a",
+    "size": 82360,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "country.caf",
+    "path": "country.caf",
+    "size": 3251648,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "drumNBass.caf",
+    "path": "drumNBass.caf",
+    "size": 3420539,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "Drums.m4a",
+    "path": "Drums.m4a",
+    "size": 1211923,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "dubstep.caf",
+    "path": "dubstep.caf",
+    "size": 3532920,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "edm.caf",
+    "path": "edm.caf",
+    "size": 3759770,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "folkRock.caf",
+    "path": "folkRock.caf",
+    "size": 5291796,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "Guitar.m4a",
+    "path": "Guitar.m4a",
+    "size": 1139644,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "latino.caf",
+    "path": "latino.caf",
+    "size": 2275193,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "metal.caf",
+    "path": "metal.caf",
+    "size": 3611303,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "onboardingClassical.caf",
+    "path": "onboardingClassical.caf",
+    "size": 1031933,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "onboardingCountry.caf",
+    "path": "onboardingCountry.caf",
+    "size": 960333,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "onboardingDrumNBass.caf",
+    "path": "onboardingDrumNBass.caf",
+    "size": 958829,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "onboardingDubstep.caf",
+    "path": "onboardingDubstep.caf",
+    "size": 824489,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "onboardingFolkRock.caf",
+    "path": "onboardingFolkRock.caf",
+    "size": 1204442,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "onboardingLatino.caf",
+    "path": "onboardingLatino.caf",
+    "size": 1232333,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "onboardingMetal.caf",
+    "path": "onboardingMetal.caf",
+    "size": 1171317,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "onboardingReggaeton.caf",
+    "path": "onboardingReggaeton.caf",
+    "size": 1197376,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "onboardingRnb.caf",
+    "path": "onboardingRnb.caf",
+    "size": 1142880,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "onboardingTrap.caf",
+    "path": "onboardingTrap.caf",
+    "size": 1131934,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "Others.m4a",
+    "path": "Others.m4a",
+    "size": 1149590,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "reggaeton.caf",
+    "path": "reggaeton.caf",
+    "size": 3131787,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "rnb.caf",
+    "path": "rnb.caf",
+    "size": 4246285,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "trap.caf",
+    "path": "trap.caf",
+    "size": 3416964,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  },
+  {
+    "name": "Vocals.m4a",
+    "path": "Vocals.m4a",
+    "size": 1135364,
+    "type": "Audio",
+    "legal_status": "PROPRIETARY_REFERENCE_ONLY",
+    "action": "Reference only - create original"
+  }
+]

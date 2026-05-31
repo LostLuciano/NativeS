@@ -1,0 +1,308 @@
+[
+  {
+    "name": "GoogleService-Info.plist",
+    "path": "GoogleService-Info.plist",
+    "size": 652,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Info.plist",
+    "size": 5654,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Alamofire_Alamofire.bundle\\Info.plist",
+    "size": 682,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "AppAuth_AppAuth.bundle\\Info.plist",
+    "size": 678,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "AppAuth_AppAuthCore.bundle\\Info.plist",
+    "size": 686,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Base.lproj\\LaunchScreen.storyboardc\\Info.plist",
+    "size": 258,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Facebook_FacebookAEM.bundle\\Info.plist",
+    "size": 692,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Facebook_FacebookCore.bundle\\Info.plist",
+    "size": 694,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Facebook_FacebookLogin.bundle\\Info.plist",
+    "size": 696,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Firebase_FirebaseABTesting.bundle\\Info.plist",
+    "size": 704,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Firebase_FirebaseCore.bundle\\Info.plist",
+    "size": 694,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Firebase_FirebaseCoreExtension.bundle\\Info.plist",
+    "size": 712,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Firebase_FirebaseCoreInternal.bundle\\Info.plist",
+    "size": 710,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Firebase_FirebaseCrashlytics.bundle\\Info.plist",
+    "size": 708,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Firebase_FirebaseDynamicLinks.bundle\\Info.plist",
+    "size": 710,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Firebase_FirebaseInstallations.bundle\\Info.plist",
+    "size": 712,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Firebase_FirebaseRemoteConfig.bundle\\Info.plist",
+    "size": 710,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Frameworks\\AppsFlyerLib.framework\\Info.plist",
+    "size": 791,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Frameworks\\FBAEMKit.framework\\Info.plist",
+    "size": 794,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Frameworks\\FBSDKCoreKit.framework\\Info.plist",
+    "size": 802,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Frameworks\\FBSDKCoreKit_Basics.framework\\Info.plist",
+    "size": 817,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Frameworks\\FBSDKLoginKit.framework\\Info.plist",
+    "size": 804,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Frameworks\\FirebaseAnalytics.framework\\Info.plist",
+    "size": 1546,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Frameworks\\GoogleAdsOnDeviceConversion.framework\\Info.plist",
+    "size": 1524,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Frameworks\\GoogleAppMeasurement.framework\\Info.plist",
+    "size": 1555,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Frameworks\\GoogleAppMeasurementIdentitySupport.framework\\Info.plist",
+    "size": 1600,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Frameworks\\iOSSourceSeparationPlayerAudioEngine.framework\\Info.plist",
+    "size": 794,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "GoogleAPIClientForREST_GoogleAPIClientForRESTCore.bundle\\Info.plist",
+    "size": 757,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "GoogleDataTransport_GoogleDataTransport.bundle\\Info.plist",
+    "size": 722,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "GoogleSignIn_GoogleSignIn.bundle\\Info.plist",
+    "size": 698,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.bundle\\Info.plist",
+    "size": 746,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "GoogleUtilities_GoogleUtilities-Environment.bundle\\Info.plist",
+    "size": 730,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "GoogleUtilities_GoogleUtilities-Logger.bundle\\Info.plist",
+    "size": 720,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "GoogleUtilities_GoogleUtilities-MethodSwizzler.bundle\\Info.plist",
+    "size": 736,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "GoogleUtilities_GoogleUtilities-Network.bundle\\Info.plist",
+    "size": 722,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "GoogleUtilities_GoogleUtilities-NSData.bundle\\Info.plist",
+    "size": 720,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "GoogleUtilities_GoogleUtilities-Reachability.bundle\\Info.plist",
+    "size": 732,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "GoogleUtilities_GoogleUtilities-UserDefaults.bundle\\Info.plist",
+    "size": 732,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "GTMAppAuth_GTMAppAuth.bundle\\Info.plist",
+    "size": 686,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "GTMSessionFetcher_GTMSessionFetcherCore.bundle\\Info.plist",
+    "size": 724,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "GTMSessionFetcher_GTMSessionFetcherFull.bundle\\Info.plist",
+    "size": 724,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "MWMPublishingData.bundle\\Info.plist",
+    "size": 1909,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "MWMPublishingSDK_DynamicConfigurationSynchronizer.bundle\\Info.plist",
+    "size": 739,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "MWMPublishingSDK_DynamicViewResourcesWrapper.bundle\\Info.plist",
+    "size": 729,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "MWMPublishingSDK_MWMPublishingSDK.bundle\\Info.plist",
+    "size": 707,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Version.plist",
+    "path": "MWMPublishingSDK_MWMPublishingSDK.bundle\\Version.plist",
+    "size": 249,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "MWMUserFeedback_MWMUserFeedback.bundle\\Info.plist",
+    "size": 714,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "nanopb_nanopb.bundle\\Info.plist",
+    "size": 668,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "PaywallShowcase_MWMTemplateCore.bundle\\Info.plist",
+    "size": 707,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Promises_FBLPromises.bundle\\Info.plist",
+    "size": 684,
+    "type": "Plist Config"
+  },
+  {
+    "name": "Info.plist",
+    "path": "Promises_Promises.bundle\\Info.plist",
+    "size": 678,
+    "type": "Plist Config"
+  }
+]

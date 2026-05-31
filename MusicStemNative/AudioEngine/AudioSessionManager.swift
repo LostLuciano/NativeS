@@ -106,7 +106,7 @@ class AudioSessionManager {
     
     private func handleAudioInterruption(_ notification: Notification) {
         guard let userInfo = notification.userInfo,
-              let typeValue = userInfo[AVAudioSession.interruptionTypeKey] as? UInt,
+              let typeValue = userInfo[AVAudioSessionInterruptionTypeKey] as? UInt,
               let type = AVAudioSession.InterruptionType(rawValue: typeValue) else {
             return
         }
@@ -119,9 +119,9 @@ class AudioSessionManager {
         case .ended:
             print("🔊 Audio interruption ended")
             // Resume playback/recording if needed
-            if let optionsValue = userInfo[AVAudioSession.interruptionOptionKey] as? UInt {
+            if let optionsValue = userInfo[AVAudioSessionInterruptionOptionKey] as? UInt {
                 let options = AVAudioSession.InterruptionOptions(rawValue: optionsValue)
-                if options.contains(.shouldResume) {
+                if options.contains(AVAudioSession.InterruptionOptions.shouldResume) {
                     print("📻 Should resume audio")
                 }
             }

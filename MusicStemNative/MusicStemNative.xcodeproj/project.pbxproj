@@ -41,8 +41,6 @@
 		531BA2C60C0F5C5AA8232F08 /* SeparationPipeline.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 6B345274CD2B564383E59710 /* SeparationPipeline.swift */; };
 		E2CDB190B0A355E788BDC004 /* StemSeparator.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 1B7105F6B92D5DA49527F1C5 /* StemSeparator.swift */; };
 		1D2250F9B1955EDAB02E47DE /* ExportManager.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 51B5BBD555545F628B3F861C /* ExportManager.swift */; };
-		5087059166D0593DA4C4980D /* ComprehensiveFeatureTest.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 799C898BF47055C69332F6B5 /* ComprehensiveFeatureTest.swift */; };
-		164B19FAC8145E09AF8EF394 /* UIComponentsTests.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 923C21F040745E429CC15EAE /* UIComponentsTests.swift */; };
 		F932DDC990FD51F4A44F8939 /* ExportViewController.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = A7A57CA3F0E159BABE5F741A /* ExportViewController.swift */; };
 		1D6FDE0CB42B5C13B0E82375 /* FilePickerViewController.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = 52528C68FC66571097B3949B /* FilePickerViewController.swift */; };
 		D9CCEE247D6C563F994536F5 /* ImportViewController.swift in Sources/Resources */ = {isa = PBXBuildFile; fileRef = AF8F0C5A2851547A95D3169C /* ImportViewController.swift */; };
@@ -120,8 +118,6 @@
 		6B345274CD2B564383E59710 /* SeparationPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SeparationPipeline.swift"; path = "ML/SeparationPipeline.swift"; sourceTree = SOURCE_ROOT; };
 		1B7105F6B92D5DA49527F1C5 /* StemSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StemSeparator.swift"; path = "ML/StemSeparator.swift"; sourceTree = SOURCE_ROOT; };
 		51B5BBD555545F628B3F861C /* ExportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ExportManager.swift"; path = "Storage/ExportManager.swift"; sourceTree = SOURCE_ROOT; };
-		799C898BF47055C69332F6B5 /* ComprehensiveFeatureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ComprehensiveFeatureTest.swift"; path = "Tests/ComprehensiveFeatureTest.swift"; sourceTree = SOURCE_ROOT; };
-		923C21F040745E429CC15EAE /* UIComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIComponentsTests.swift"; path = "Tests/UIComponentsTests.swift"; sourceTree = SOURCE_ROOT; };
 		A7A57CA3F0E159BABE5F741A /* ExportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ExportViewController.swift"; path = "UI/ExportViewController.swift"; sourceTree = SOURCE_ROOT; };
 		52528C68FC66571097B3949B /* FilePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "FilePickerViewController.swift"; path = "UI/FilePickerViewController.swift"; sourceTree = SOURCE_ROOT; };
 		AF8F0C5A2851547A95D3169C /* ImportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ImportViewController.swift"; path = "UI/ImportViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -158,6 +154,8 @@
 		0080A9C15E3A56AFA4FCC2B8 /* convtcn20_2048_fp16.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper.image-bundle; name = "convtcn20_2048_fp16.mlmodelc"; path = "Models/convtcn20_2048_fp16.mlmodelc"; sourceTree = SOURCE_ROOT; };
 		980CCA24B7015D81B0BB32F9 /* dunlight_tfc_tdf_b9_l3_w_subv1_cirm_6stems_64_fp16_v2.0.0.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper.image-bundle; name = "dunlight_tfc_tdf_b9_l3_w_subv1_cirm_6stems_64_fp16_v2.0.0.mlmodelc"; path = "Models/dunlight_tfc_tdf_b9_l3_w_subv1_cirm_6stems_64_fp16_v2.0.0.mlmodelc"; sourceTree = SOURCE_ROOT; };
 		37CB22BABBDB5D0FA4A8D067 /* dun_tfc_tdf_b9_l3_w_6stems_32_fp32_v2.0.1.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper.image-bundle; name = "dun_tfc_tdf_b9_l3_w_6stems_32_fp32_v2.0.1.mlmodelc"; path = "Models/dun_tfc_tdf_b9_l3_w_6stems_32_fp32_v2.0.1.mlmodelc"; sourceTree = SOURCE_ROOT; };
+		799C898BF47055C69332F6B5 /* ComprehensiveFeatureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ComprehensiveFeatureTest.swift"; path = "Tests/ComprehensiveFeatureTest.swift"; sourceTree = SOURCE_ROOT; };
+		923C21F040745E429CC15EAE /* UIComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIComponentsTests.swift"; path = "Tests/UIComponentsTests.swift"; sourceTree = SOURCE_ROOT; };
 		EAE1558ED3A65483935F6A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -489,8 +487,6 @@
 				531BA2C60C0F5C5AA8232F08 /* SeparationPipeline.swift in Sources */,
 				E2CDB190B0A355E788BDC004 /* StemSeparator.swift in Sources */,
 				1D2250F9B1955EDAB02E47DE /* ExportManager.swift in Sources */,
-				5087059166D0593DA4C4980D /* ComprehensiveFeatureTest.swift in Sources */,
-				164B19FAC8145E09AF8EF394 /* UIComponentsTests.swift in Sources */,
 				F932DDC990FD51F4A44F8939 /* ExportViewController.swift in Sources */,
 				1D6FDE0CB42B5C13B0E82375 /* FilePickerViewController.swift in Sources */,
 				D9CCEE247D6C563F994536F5 /* ImportViewController.swift in Sources */,

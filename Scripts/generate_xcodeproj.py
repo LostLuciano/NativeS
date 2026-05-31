@@ -29,6 +29,7 @@ def create_xcodeproj(project_root):
     # Filter files by target
     dsp_files = []
     app_files = []
+    test_files = []
     resources = []
     headers = []
     
@@ -59,7 +60,10 @@ def create_xcodeproj(project_root):
                 models_added.add(mlmodelc_path)
                 resources.append(mlmodelc_path)
         elif file.endswith(".swift"):
-            app_files.append(file)
+            if "Tests/" in file:
+                test_files.append(file)
+            else:
+                app_files.append(file)
         elif file.endswith("Info.plist"):
             # Info.plist doesn't go to compile sources, it's referenced in build settings
             pass
@@ -69,6 +73,7 @@ def create_xcodeproj(project_root):
             
     # Print statistics
     print(f"Collected {len(app_files)} App source files")
+    print(f"Collected {len(test_files)} Test source files")
     print(f"Collected {len(dsp_files)} DSP source files")
     print(f"Collected {len(headers)} header files")
     print(f"Collected {len(resources)} resources")
@@ -131,7 +136,7 @@ def create_xcodeproj(project_root):
     file_refs["MusicStemNative.app"] = (generate_id("REF_PROD_APP"), "wrapper.application", "BUILT_PRODUCTS_DIR", "MusicStemNative.app")
     file_refs["DSPFramework.framework"] = (generate_id("REF_PROD_DSP"), "wrapper.framework", "BUILT_PRODUCTS_DIR", "DSPFramework.framework")
     
-    for f in app_files + dsp_files + headers + resources + ["Info.plist"]:
+    for f in app_files + dsp_files + headers + resources + test_files + ["Info.plist"]:
         ref_id = generate_id(f"REF_{f}")
         bf_id = generate_id(f"BF_{f}")
         
@@ -284,7 +289,7 @@ def create_xcodeproj(project_root):
             "Managers": [f for f in app_files + headers + resources if "Managers/" in f],
             "Models": [f for f in resources if "Models/" in f],
             "Storage": [f for f in app_files + headers + resources if "Storage/" in f],
-            "Tests": [f for f in app_files + headers + resources if "Tests/" in f],
+            "Tests": [f for f in test_files if "Tests/" in f],
             "UI": [group_ids["UI/Components"]] + [f for f in app_files + headers + resources if "UI/" in f and "UI/Components/" not in f],
             "UI/Components": [f for f in app_files + headers + resources if "UI/Components/" in f]
         }

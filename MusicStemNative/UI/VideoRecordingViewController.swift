@@ -60,7 +60,7 @@ class VideoRecordingViewController: UIViewController {
         
         // Stop recording if in progress
         if videoRecordingManager.isCurrentlyRecording {
-            try? videoRecordingManager.stopRecording()
+            try? videoRecordingManager.stopVideoRecording()
         }
         
         videoRecordingManager.stopPreview()

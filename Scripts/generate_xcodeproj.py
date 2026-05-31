@@ -366,7 +366,7 @@ def create_xcodeproj(project_root):
         f.write("\t\t\t\tBase,\n")
         f.write("\t\t\t);\n")
         f.write(f"\t\t\tmainGroup = {main_group_id};\n")
-        f.write("\t\t\tproductRefGroup = {products_group_id} /* Products */;\n")
+        f.write(f"\t\t\tproductRefGroup = {products_group_id} /* Products */;\n")
         f.write("\t\t\tprojectDirPath = \"\";\n")
         f.write("\t\t\tprojectRoot = \"\";\n")
         f.write("\t\t\ttargets = (\n")

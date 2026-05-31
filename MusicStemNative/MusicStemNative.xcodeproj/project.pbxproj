@@ -421,7 +421,7 @@
 				Base,
 			);
 			mainGroup = E53F0F39060759EFA29CF8DF;
-			productRefGroup = {products_group_id} /* Products */;
+			productRefGroup = 742755949F8D59BE98B8A916 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
